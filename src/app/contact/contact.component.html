@@ -1,0 +1,136 @@
+<app-header></app-header>
+<!-- Page Header Start -->
+  <div class="container-fluid page-header mb-5 py-5">
+    <div class="container">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb text-uppercase">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!--directors-->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Meet Our Directors</h6>
+            <h1 class="mb-5">Our Visionary Leaders</h1>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Director 1 -->
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="../../assets/img/charan-sir.jpg" alt="Director 1">
+                    </div>
+                    <div class="team-text">
+                        <div class="bg-light text-center">
+                            <h5 class="fw-bold mb-0">SATHAYA SAI CHARAN</h5>
+                            <small>Director</small>
+                        </div>
+                        <div class="bg-primary text-center">
+                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/sathya-sai-charan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <!--<a class="btn btn-square mx-1" href="https://twitter.com/sathya_charan" target="_blank"><i class="bi bi-twitter-x"></i></a>-->
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/cherryvarma_?igsh=MWNtcXRraHR5NDU3bQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Director 2 -->
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="../../assets/img/director2.jpg" alt="Director 2">
+                    </div>
+                    <div class="team-text">
+                        <div class="bg-light text-center">
+                            <h5 class="fw-bold mb-0">KRITI</h5>
+                            <small>Director</small>
+                        </div>
+                        <div class="bg-primary text-center">
+                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/director2" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://twitter.com/director2" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/director2" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--directors-->
+
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Get In Touch</h6>
+                <h1 class="mb-4">Contact For Any Query</h1>
+                <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.007933149259!2d78.3753748!3d17.4339053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93bd18410b0f%3A0x8d7e3fea891858ce!2sT-Hub!5e0!3m2!1sen!2sin!4v1695905163566!5m2!1sen!2sin" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-light p-5 h-100 d-flex align-items-center">
+                    <form id="contactForm" method="POST" action="send_email.php">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact End -->
+
+<app-footer></app-footer>
