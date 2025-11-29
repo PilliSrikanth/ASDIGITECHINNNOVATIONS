@@ -11,9 +11,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "allowedCommonJsDependencies": ["wowjs"],
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+             "allowedCommonJsDependencies": [
+      "wowjs"
+    ],
             "outputPath": "dist/glignesis",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,6 +29,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "src/css/bootstrap.min.css",
               "src/css/bootstrap.min.css",
               "src/lib/animate/animate.min.css",
               "src/lib/owlcarousel/assets/owl.carousel.min.css",

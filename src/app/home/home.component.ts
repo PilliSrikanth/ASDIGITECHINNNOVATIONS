@@ -114,21 +114,22 @@ export class HomeComponent implements OnInit {
       items: 1,
       dots: false,
       loop: true,
-      nav: true,
+      /*nav: true,
       navText: [
         '<i class="bi bi-chevron-left"></i>',
         '<i class="bi bi-chevron-right"></i>'
-      ]
+      ]*/
     });
+
 
     $(".service-carousel").owlCarousel({
       autoplay: true,
       smartSpeed: 1000,
       center: true,
-      margin: 25,
+      margin: 0,
       dots: true,
       loop: true,
-      nav: false,
+     
       responsive: {
         0: { items: 1 },
         576: { items: 2 },
@@ -138,21 +139,22 @@ export class HomeComponent implements OnInit {
       }
     });
 
-    $(".testimonial-carousel").owlCarousel({
-      autoplay: true,
-      smartSpeed: 1000,
-      center: true,
-      dots: false,
+    $('.owl-carousel').owlCarousel({
       loop: true,
-      nav: true,
-      navText: [
-        '<i class="bi bi-arrow-left"></i>',
-        '<i class="bi bi-arrow-right"></i>'
-      ],
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
       responsive: {
-        0: { items: 1 },
-        768: { items: 2 },
-        992: { items: 3 }
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
       }
     });
   }
@@ -163,7 +165,7 @@ export class HomeComponent implements OnInit {
       center: true,
       dots: true,
       loop: true,
-      nav: false,
+      /*nav: false,*/
       responsive: {
         0: { items: 1 },
         576: { items: 2 },
@@ -173,7 +175,27 @@ export class HomeComponent implements OnInit {
       }
     });
   }
-  ngAfterViewInit() {
+
+  ngAfterViewInit(): void {
+    $('.owl-carousel.service-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
     new WOW.WOW().init();
     this.initCarousels();
   }

@@ -19,21 +19,6 @@
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
-
 /*** Button ***/
 .btn {
     font-weight: 600;
@@ -75,87 +60,6 @@
     justify-content: center;
     align-items: center;
     padding: 40px 0px;
-}
-
-/*** Navbar ***/
-.top-bar {
-    height: 75px;
-    padding: 0 4rem;
-}
-
-.nav-bar {
-    position: relative;
-    padding: 0 4.75rem;
-    transition: .5s;
-    z-index: 9999;
-    padding: 10px;
-}
-
-.nav-bar.sticky-top {
-    position: sticky;
-    padding: 0;
-    z-index: 9999;
-    
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 25px 0;
-    color: var(--dark);
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    outline: none;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
-}
-
-@media (max-width: 991.98px) {
-    .nav-bar {
-        padding: 5px;
-    }
-
-    .navbar-light .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar-light .navbar-nav {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid #EEEEEE;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
 }
 
 
@@ -252,11 +156,6 @@
 }
 
 
-/*** Facts ***/
-.fact {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../../assets/img/back.jpg) center center no-repeat;
-    background-size: cover;
-}
 
 
 /*** Service ***/
@@ -432,54 +331,6 @@
 .bootstrap-datetimepicker-widget table td.today::before {
     border-bottom-color: var(--primary);
 }
-
-
-/*** Team ***/
-.team-item img {
-    transition: .5s;
-    height: 250px;
-    width: 100%;
-}
-
-.team-item:hover img {
-    transform: scale(1.1);
-}
-
-.team-item .team-text {
-    height: 90px;
-    overflow: hidden;
-}
-
-.team-item .team-text .bg-light,
-.team-item .team-text .bg-primary {
-    position: relative;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: .5s;
-}
-
-.team-item .team-text .bg-primary {
-    flex-direction: row;
-}
-
-.team-item:hover .team-text .bg-light {
-    margin-top: -90px;
-}
-
-.team-item .team-text .bg-primary .btn {
-    color: var(--primary);
-    background: #FFFFFF;
-}
-
-.team-item .team-text .bg-primary .btn:hover {
-    color: #FFFFFF;
-    background: var(--secondary)
-}
-
-
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-text,
 .testimonial-carousel .owl-item.center .testimonial-text * {
@@ -542,78 +393,3 @@
     color: var(--dark);
 }
 
-
-/*** Footer ***/
-.footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light);
-    border: 1px solid #FFFFFF;
-    border-radius: 35px;
-    transition: .3s;
-}
-
-.footer .btn.btn-social:hover {
-    color: var(--primary);
-}
-
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
-}
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
-}
-
-.footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-    display: flex;
-    justify-content: space-between;
-}
-.footer .copyright  .rows{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer .copyright a {
-    color: var(--light);
-}
-/* terms&conditions */
-.card-body{
-    width: 90%;
-    margin: 0px auto;
-    padding: 30px;
-    border: 1px solid rgb(0, 0, 0, .125);
-    border-radius: 15px;
-    background-clip: border-box;
-    box-shadow: 0px 0px 4px #a8a5a5;
-}
- .text-muted{
-    line-height: 1.6; 
-    margin-left: 48px;
- }
-
- 

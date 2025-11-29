@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "bootstrap": "^5.3.3",
+    "counterup2": "^2.0.2",
     "jquery": "^3.7.1",
     "ngx-bootstrap": "^18.0.2",
     "ngx-owl-carousel-o": "^18.0.0",
