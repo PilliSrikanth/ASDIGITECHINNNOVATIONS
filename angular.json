@@ -30,7 +30,6 @@
             "styles": [
               "src/styles.css",
               "src/css/bootstrap.min.css",
-              "src/css/bootstrap.min.css",
               "src/lib/animate/animate.min.css",
               "src/lib/owlcarousel/assets/owl.carousel.min.css",
               "src/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css",
