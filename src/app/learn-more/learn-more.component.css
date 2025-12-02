@@ -37,4 +37,5 @@
 /* Hover effects for better interactivity */
 li[role="presentation"] a:hover {
     color: #0056b3;
+    cursor: pointer;
 }
