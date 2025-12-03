@@ -128,3 +128,23 @@
 .footer .copyright a {
     color: var(--light);
 }
+
+/********** MOBILE (max-width: 768px) **********/
+@media (max-width: 768px) {
+    .footer .copyright {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer .copyright .rows {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .footer .copyright a {
+        display: block;
+        margin: 5px 0;
+    }
+}

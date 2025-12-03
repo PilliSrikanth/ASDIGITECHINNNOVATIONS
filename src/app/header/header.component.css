@@ -50,7 +50,6 @@ nav {
     background: #fff; /* optional */
     z-index: 999;
 }
-
 .nav-bar {
     position: relative;
     padding: 0 4.75rem;
@@ -129,4 +128,63 @@ nav {
 .navbar-nav .nav-item .nav-link.active {
     color: #007bff; /* Change this to your desired active text color */
     font-weight: bold; /* Optional: make the active link bold */
+}
+
+
+/********** MOBILE (max-width: 768px) **********/
+@media (max-width: 768px) {
+
+    nav,
+    .nav-bar {
+        padding: 10px 15px !important;
+        width: 100% !important;
+    }
+
+    .navbar-brand img {
+        max-width: 80px !important;
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 20px;
+    }
+
+    .navbar-collapse {
+        background: white;
+        width: 100% !important;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0 !important;
+        padding: 12px 15px !important;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .navbar-light .navbar-nav {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #EEE;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .container, .container-fluid {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    * {
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
 }
