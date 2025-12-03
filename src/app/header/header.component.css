@@ -33,7 +33,7 @@ nav{
     justify-content: space-between;
     position: fixed;
     margin: -10px;
-    width: 100%;
+    width:fit-content;
 }
 .nav-bar {
     position: relative;
