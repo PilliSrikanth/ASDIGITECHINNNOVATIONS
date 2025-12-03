@@ -29,12 +29,20 @@
     height: 75px;
     padding: 0 4rem;
 }
-nav{
+nav {
+    display: flex;
     justify-content: space-between;
     position: fixed;
-    margin: -10px;
-    width:fit-content;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #fff; /* optional */
+    z-index: 999;
 }
+
 .nav-bar {
     position: relative;
     padding: 0 4.75rem;
